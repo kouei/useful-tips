@@ -13,7 +13,7 @@ you can use `aptitude` to substitute `apt`:
 ## Setup SOCKS5 proxy for apt
 Add the following content:  
   
-<p>Acquire::socks::http "socks5h://127.0.0.1:1080";</p>  
+<strong>Acquire::socks::http "socks5h://127.0.0.1:1080";</strong><br>
 **Acquire:: socks ::https "socks5h://127.0.0.1:1080";**  
 **Acquire:: socks ::ftp "socks5h://127.0.0.1:1080";**  
   
