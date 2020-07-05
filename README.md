@@ -26,3 +26,11 @@ to /etc/apt/apt.conf.d/proxy.conf
 ## Tools for creating boot USB drive
 1. For windows, use 微PE.
 2. For Linux, use Rufus.
+
+## Print web page in WYSIWYG style (Save Page WE)
+**Save Page WE** is an awesome Google Chrome Extension that can print a web page into a single html in a WYSIWYG (What you see is what you get) style.
+
+## Check Linux Version (Neofetch)
+The **neofetch** command can display your linux version with its logo drawn in ascii art.
+on Ubuntu, simply install it with **apt**.
+
