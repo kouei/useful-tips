@@ -32,5 +32,64 @@ to /etc/apt/apt.conf.d/proxy.conf
 
 ## Check Linux Version (Neofetch)
 The **neofetch** command can display your linux version with its logo drawn in ascii art.
-on Ubuntu, simply install it with **apt**.
+on Ubuntu, simply install it with **apt**.  
 
+
+
+
+
+# CMD Script Tips
+
+## Turn off the echo mode
+When running a cmd script, before every line is executed, the cmd echoes the actual
+command line it is going to execute. To turn off this feature, add following to the
+top of the cmd script:
+
+`@echo off`
+
+or if you just want to turn of the echo mode of a single command, simply add a **@** to your command:  
+
+`@[Your Command]`  
+
+## Arithmetic Operation
+It is better to use quotation mark in the arithmetic operation:
+
+`set /a num="(2+4)*5"`
+
+## :eof
+**:eof** is a special label, which always point to the end of the current cmd script file.
+So `goto :eof` actually ends the running script.
+
+## setlocal
+When used in a batch file, makes all further changes to environment variables local to the current batch file. When used outside of a batch file, does nothing. Can be ended using  
+**endlocal**. Exiting a batch file automatically calls **endlocal**.  
+  
+Furthermore, can be used to enable delayed expansion like this: "setlocal EnableDelayedExpansion". Delayed expansion consists in the names of variables enclosed in exclamation marks  
+being replaced with their values only after the execution reaches the location of their use rather than at an earlier point.  
+
+## Delayed Expansion
+
+The following script will output **4** instead of **5**  
+  
+```
+@echo off 
+set a=4 
+set a=5 & echo %a% 
+```
+  
+This is because when CMD load `set a=5 & echo %a% `, it will load all occurrences of %a% in a whole, before `set a=5` had a chance to execute.  
+To solve this problem you need Delayed Expansion which will make CMD load environment variables each time it executes a sub-statement.  
+To set Delayed Expansion:  
+
+`setlocal enabledelayedexpansion`  
+  
+Then, you have to change %a% to !a! in order to use Delayed Expansion.  
+
+Now the following script will output **5** as expected:  
+  
+```
+setlocal enabledelayedexpansion
+@echo off 
+set a=4 
+set a=5 & echo !a!
+```
