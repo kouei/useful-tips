@@ -96,3 +96,17 @@ setlocal enabledelayedexpansion
 set a=4 
 set a=5 & echo !a!
 ```
+
+
+# Docker Tips
+## Change Storage Driver
+1. Create the following file if it does not exist:  
+`/etc/docker/daemon.json`
+
+2. Add the following content to it:
+```
+{
+    "storage-driver":"aufs"
+}
+```
+This will change the storage driver from "overlay2" (default) to "aufs"
