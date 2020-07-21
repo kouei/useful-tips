@@ -115,3 +115,6 @@ This will change the storage driver from "overlay2" (default) to "aufs"
 
 ## Semantic Versioning
 [Semantic Versioning](https://semver.org/) is a good tool for solving the [Dependency Hell](https://en.wikipedia.org/wiki/Dependency_hell#:~:text=Dependency%20hell%20is%20a%20colloquial,versions%20of%20other%20software%20packages.) issue.
+
+## Choose License for a Project
+[Choose an open source license](https://choosealicense.com/) is a good place to help you choose a suitable license for your project.
