@@ -118,3 +118,7 @@ This will change the storage driver from "overlay2" (default) to "aufs"
 
 ## Choose License for a Project
 [Choose an open source license](https://choosealicense.com/) is a good place to help you choose a suitable license for your project.
+
+## py versus python3
+Use Command `py` Instead of Command `python3` on Windows (CMD/PowerShell)  
+See: https://stackoverflow.com/questions/61058298/why-does-python-use-py-to-run-programs-on-windows  
