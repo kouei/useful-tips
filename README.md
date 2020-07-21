@@ -121,4 +121,7 @@ This will change the storage driver from "overlay2" (default) to "aufs"
 
 ## py versus python3
 Use Command `py` Instead of Command `python3` on Windows (CMD/PowerShell)  
-See: https://stackoverflow.com/questions/61058298/why-does-python-use-py-to-run-programs-on-windows  
+See https://stackoverflow.com/questions/61058298/why-does-python-use-py-to-run-programs-on-windows  
+
+## Packaging Python Projects
+See [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/) for how to package python project, so that you can install it with `pip`.
