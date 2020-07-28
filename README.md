@@ -128,3 +128,8 @@ See https://stackoverflow.com/questions/61058298/why-does-python-use-py-to-run-p
 
 ## Packaging Python Projects
 See [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/) for how to package python project, so that you can install it with `pip`.
+
+## Clean Repository Before Build
+When build failed, try `git clean -dfx` to remove untracked files from last build.  
+This will make a clean build environment, and may fix the build failure.
+
