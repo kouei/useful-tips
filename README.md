@@ -120,7 +120,8 @@ This will change the storage driver from "overlay2" (default) to "aufs"
 [Choose an open source license](https://choosealicense.com/) is a good place to help you choose a suitable license for your project.
 
 ## Python Virtual Environment
-See [Installing packages using pip and virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)  
+Using `virtualenv` instead of `venv`.  
+Since the latter is just a subset of the former and has many defects.  
 
 ## py versus python3
 Use Command `py` Instead of Command `python3` on Windows (CMD/PowerShell)  
